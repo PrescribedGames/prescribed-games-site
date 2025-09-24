@@ -1,6 +1,8 @@
 import { defineConfig } from "astro/config";
+import vercel from "@astrojs/vercel/serverless"; // use Vercel serverless adapter
 
 export default defineConfig({
   site: "https://prescribedgames.com",
-  output: "static",          // ← static build = no adapter required
+  output: "server",
+  adapter: vercel(),
 });
