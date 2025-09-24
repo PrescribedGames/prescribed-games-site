@@ -1,0 +1,40 @@
+---
+import Base from "../layouts/Base.astro";
+import Nav from "../components/Nav.astro";
+---
+<Base title="Prescribed Games" description="Applied fun. Side effects may include joy.">
+  <Fragment slot="nav"><Nav /></Fragment>
+
+  <section class="hero center">
+    <img
+      class="logo-hero"
+      src="/logos/logo-teal-light_2x.png"
+      alt="Prescribed Games"
+      width="1920" height="960"
+      decoding="async" loading="eager"
+    />
+    <h1 class="sr-only">Prescribed Games</h1>
+    <p class="lede">Taken daily. Side effects may include joy.</p>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="section">
+    <h2>Studio</h2>
+    <p class="lede">We are a small UK studio exploring playful, experimental interactions.</p>
+  </section>
+
+  <section class="section">
+    <h2>Featured</h2>
+    <a class="card" href="/games#privacy">
+      <img src="/images/placeholder-16x9.jpg" alt="Privacy placeholder key art" />
+      <div class="pad">
+        <div class="status">In development</div>
+        <h3 style="margin:.6em 0 .2em">Privacy</h3>
+        <p style="margin:0; color:var(--muted)">
+          An experimental stealth-social sim about what we reveal and what we hide.
+        </p>
+      </div>
+    </a>
+  </section>
+</Base>

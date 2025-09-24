@@ -1,0 +1,19 @@
+---
+const links = [
+  { href: "/games", label: "Prescriptions" },
+  { href: "/contact", label: "Contact" }
+];
+---
+<nav class="nav">
+  <a href="/" class="brand" aria-label="Home">
+    <img src="/logos/logo-dark.png" alt="Prescribed Games logo" />
+  </a>
+  {links.map(l => (
+    <a 
+      href={l.href} 
+      aria-current={Astro.url.pathname === l.href ? "page" : undefined}
+    >
+      {l.label}
+    </a>
+  ))}
+</nav>

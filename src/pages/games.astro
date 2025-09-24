@@ -1,0 +1,57 @@
+---
+import Base from "../layouts/Base.astro";
+import Nav from "../components/Nav.astro";
+---
+<Base title="Prescriptions — Prescribed Games" description="Our projects and in-development titles.">
+  <Fragment slot="nav"><Nav /></Fragment>
+
+  <!-- Page header -->
+  <section class="hero">
+    <h1>Prescriptions</h1>
+    <p class="lede">Our current and upcoming titles. First up: <strong>Privacy</strong>.</p>
+  </section>
+
+  <!-- Game: Privacy -->
+  <section id="privacy" class="hero fullheight">
+    <div class="status">In development</div>
+    <h2>Privacy</h2>
+    <p class="lede">An experimental stealth-social sim about what we reveal and what we hide.</p>
+    <img
+      src="/images/placeholder-16x9.jpg"
+      alt="Privacy placeholder image"
+      style="width:100%; border-radius:16px; border:1px solid var(--border); margin-top:12px"
+    />
+  </section>
+
+  <section class="section">
+    <h3>About the game</h3>
+    <p>
+      Placeholder: 120–180 words about the concept, core loop, mood, inspirations,
+      and what “medical” means in its UI/world. Keep it readable.
+    </p>
+  </section>
+
+  <section class="section">
+    <h3>Media</h3>
+    <div class="grid">
+      <div class="card"><img src="/images/placeholder-16x9.jpg" alt="Screenshot placeholder 1" /></div>
+      <div class="card"><img src="/images/placeholder-16x9.jpg" alt="Screenshot placeholder 2" /></div>
+      <div class="card"><img src="/images/placeholder-16x9.jpg" alt="Screenshot placeholder 3" /></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h3>Platforms</h3>
+    <p class="lede">TBA</p>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="section">
+    <h2>Future projects</h2>
+    <div class="grid">
+      <div class="card"><div class="pad"><strong>Coming soon</strong><br/><span style="color:var(--muted)">Space reserved for next game.</span></div></div>
+      <div class="card"><div class="pad"><strong>Coming soon</strong></div></div>
+    </div>
+  </section>
+</Base>

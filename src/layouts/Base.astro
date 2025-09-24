@@ -1,0 +1,34 @@
+---
+const { title = "Prescribed Games", description = "Applied fun. Side effects may include joy." } = Astro.props;
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="stylesheet" href="/src/styles/theme.css" />
+
+    <!-- Favicon / logo -->
+    <link rel="icon" type="image/png" href="/logos/logo-icon.png" />
+
+    <!-- Social share preview -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content="/logos/logo-icon.png" />
+
+    <meta name="theme-color" content="#10B0A6" />
+  </head>
+  <body>
+    <div class="container">
+      <slot name="nav" />
+      <main><slot /></main>
+      <footer class="footer">
+  <small>
+    © {new Date().getFullYear()} Prescribed Games • 
+    <a href="/contact">Contact</a>
+  </small>
+</footer>
+    </div>
+  </body>
+</html>
